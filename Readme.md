@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Evgeniya Selyunina](https://up.htmlacademy.ru/htmlcss/14/user/110039).
-* Наставник: `Неизвестно`.
+* Наставник:[Анастасия Мусаэльян](https://htmlacademy.ru/profile/id124940).
 
 ---
 

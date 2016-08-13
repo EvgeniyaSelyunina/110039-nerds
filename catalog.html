@@ -6,126 +6,150 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-top">
-        <div class="logo"><a href="#"><img src="http://placehold.it/150x100" alt="Nerds" width="80" height="40"></a>
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <a><img src="http://placehold.it/150x100" alt="Nerds" width="80" height="40"></a>
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a>Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <a class="cart" href="#">Корзина</a>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="basket" href="#">Корзина</a>
-        </div>
-        <h1 class="main-title">Добро пожаловать в магазин готовых макетов</h1>
+          <h1 class="main-title">Добро пожаловать в магазин готовых макетов</h1>
       </div>
     </header>
     <main class="container">
       <aside class="filters">
-        <div class="filters-title">Стоимость:</div>
         <form action="https://echo.htmlacademy.ru" method="post">
-          <label for=weight></label>
+          <div class="filters-title">Стоимость:</div>
           <input type=range id=weight min=0 value=10 max=15000>
-        </form>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>От
+          <label for=weight></label>
+          <p class="filters-title">От
             <input type=text name="price-min" size="10">
           </p>
-        </form>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>До
+          <p class="filters-title">До
             <input type=text name="price-max" size="10">
           </p>
-        </form>
-        <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="filters-title">Сетка:</div>
-          <input type="radio" name="grid" value="adaptive">
-          <label>Адаптивная</label>
-          <input type="radio" name="grid" value="fixed" checked>
-          <label>Фиксированная</label>
-          <input type="radio" name="grid" value="rubber">
-          <label>Резиновая</label>
-        <div class="filters-title">Особенности:</div>
-          <input id="" type="checkbox" name="slider" value="slider" checked>
-          <label for="">Слайдер</label>
-          <input id="" type="checkbox" name="plus" value="plus">
-          <label for="">Блок преимуществ</label>
-          <input id="" type="checkbox" name="news" value="news">
-          <label for="">Новости</label>
-          <input id="" type="checkbox" name="gallery" value="gallery" checked>
-          <label for="">Галерея</label>
-          <input id="" type="checkbox" name="basket" value="basket">
-          <label for="">Корзина</label>
+          <div class="filters-title">Сетка:</div>
+          <input id="adaptive" type="radio" name="grid" value="adaptive">
+          <label for="adaptive">Адаптивная</label>
+          <input id="fixed" type="radio" name="grid" value="fixed" checked>
+          <label for="fixed">Фиксированная</label>
+          <input id="rubber" type="radio" name="grid" value="rubber">
+          <label for="rubber">Резиновая</label>
+          <div class="filters-title">Особенности:</div>
+          <input id="slider" type="checkbox" name="slider" value="slider" checked>
+          <label for="slider">Слайдер</label>
+          <input id="advantages" type="checkbox" name="plus" value="plus">
+          <label for="advantages">Блок преимуществ</label>
+          <input id="news" type="checkbox" name="news" value="news">
+          <label for="news">Новости</label>
+          <input id="gallery" type="checkbox" name="gallery" value="gallery" checked>
+          <label for="gallery">Галерея</label>
+          <input id="basket" type="checkbox" name="basket" value="basket">
+          <label for="basket">Корзина</label>
           <button class="btn" type="submit">Показать</button>
         </form>
       </aside>
-      <div class="picking">
-        <p>Сортировать:</p>
+      <div class="filters-results">
+        <div class="filters-results-title">Сортировать:</div>
           <ul>
             <li>
-              <a class="btn" type="submit">По цене</a>
+              <a class="price" type="submit">По цене</a>
             </li>
             <li>
-              <a class="btn" type="submit">По типу</a>
+              <a class="type" type="submit">По типу</a>
             </li>
             <li>
-              <a class="btn" type="submit">По функционалу</a>
+              <a class="functional" type="submit">По функционалу</a>
             </li>
           </ul>
-          <div class="arrow">Стрелочки</div>
+          <div class="arrow">
+            <a class="active"></a>
+            <a href="#"></a>
+          </div>
       </div>
-      <div class="gallery">
-        <a href="#"><img src="http://placehold.it/150x100" alt="" width="100" height="100"></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt="" width="100" height="100"></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt="" width="100" height="100"></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt="" width="100" height="100"></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt="" width="100" height="100"></a>
-        <a href="#"><img src="http://placehold.it/150x100" alt="" width="100" height="100"></a>
+      <div class="advertisement">
+        <div class="advertisement-1" >
+          <img src="http://placehold.it/150x100" alt="" width="100" height="100">
+          <div class="description" >Description</div>
+        </div>
+        <div class="advertisement-2" >
+          <img src="http://placehold.it/150x100" alt="" width="100" height="100">
+          <div class="description" >Description</div>
+        </div>
+        <div class="advertisement-2" >
+          <img src="http://placehold.it/150x100" alt="" width="100" height="100">
+          <div class="description" >Description</div>
+        </div>
+        <div class="advertisement-2" >
+          <img src="http://placehold.it/150x100" alt="" width="100" height="100">
+          <div class="description" >Description</div>
+        </div>
+        <div class="advertisement-2" >
+          <img src="http://placehold.it/150x100" alt="" width="100" height="100">
+          <div class="description" >Description</div>
+        </div>
+        <div class="advertisement-2" >
+          <img src="http://placehold.it/150x100" alt="" width="100" height="100">
+          <div class="description" >Description</div>
+        </div>
       </div>
       <ul class="pagination">
         <li class="active">
           <a>1</a>
         </li>
         <li>
-          <a class="btn" href="#">2</a>
+          <a class="item" href="#">2</a>
         </li>
         <li>
-          <a class="btn" href="#">3</a>
+          <a class="item" href="#">3</a>
         </li>
         <li>
-          <a class="btn" href="#">Следующая</a>
+          <a class="item" href="#">Следующая</a>
         </li>
       </ul>
     </main>
     <footer class="main-footer">
-      <div class="contacts">
-        <img src="http://placehold.it/150x100" alt="Nerds" width="460" height="200">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <h3>NERDS DESIGN STUDIO</h3>
-            191186, Санкт-Петербург,<br>
-            ул. Б.Конюшенная,д. 19/8<br>
-            тел. +7 (812) 275-75-75<br>
-            <a class="btn" href="#">Напишите нам</a>
-        </form>
-      </div>
-      <div class="footer-container">
-        <div class="footer-social">
+      <div class="container">
+        <div class="contacts">
+          <img src="http://placehold.it/150x100" alt="Nerds" width="460" height="200">
+          <div class="address">
+            <div class="address-name">NERDS DESIGN STUDIO</div>
+              191186, Санкт-Петербург,<br>
+              ул. Б.Конюшенная,д. 19/8<br>
+              тел. +7 (812) 275-75-75<br>
+              <a class="btn" href="#">Напишите нам</a>
+          </div>
+        </div>
+        <div class="footer-container">
+          <div class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-            <h1>Давайте дружить, это выгодно!</h1>
+            <p class="slogan">Давайте дружить, это выгодно!</p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+          <div class="footer-info">
+            <h2 class="slogan">Давайте дружить, это выгодно!</h2>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
       </div>
     </footer>

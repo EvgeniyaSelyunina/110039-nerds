@@ -5,16 +5,37 @@ body {
     line-height:22px;
     font-weight:normal;
 }
-h1 {
+.promo-product-title {
     font-family: "Roboto", serif;
     font-size: 36px;
     color:#000000
     line-height:36px;
     font-weight:normal;
 }
-h2 {
+.main-title{
+    font-family: "Roboto", serif;
+    font-size: 40px;
+    color:#000000
+    line-height:auto;
+    font-weight:normal;
+}
+.slider1-title {
     font-family: "Roboto", serif;
     font-size: 18px;
+    color:#000000
+    line-height:30px;
+    font-weight:normal;
+}
+.features-title {
+    font-family: "Roboto", serif;
+    font-size: 18px;
+    color:#000000
+    line-height:30px;
+    font-weight:normal;
+}
+.contacts-name {
+    font-family: "Roboto", serif;
+    font-size: 16px;
     color:#000000
     line-height:30px;
     font-weight:normal;

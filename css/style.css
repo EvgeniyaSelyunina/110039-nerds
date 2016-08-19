@@ -5,6 +5,118 @@ body {
     line-height:22px;
     font-weight:normal;
 }
+
+* {
+ outline: 1px solid red;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  min-height: 70px;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.main-header {
+  margin-bottom: 80px;
+}
+
+.header-top{
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.logo{
+  float: left;
+  width: 140px;
+}
+
+.main-navigation{
+  float: left;
+  width: 400px;
+}
+
+.user-block{
+  float: right;
+  width: 100px;
+}
+
+.slider{
+  width: 880px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.slider-left{
+  float: left;
+  width: 380px;
+}
+
+.slider-right{
+  float: right;
+  width: 340px;
+}
+
+.index-content{
+  margin-bottom: 20px;
+  padding: 80px 0px;
+}
+
+.features{
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+}
+
+.features:last-child {
+  margin-right: 0;
+}
+
+.promo{
+  padding: 70px 0px;
+  margin-bottom:40px;
+}
+
+.promo-product{
+  float: left;
+  width: 621px;
+}
+
+.promo-job{
+  float: right;
+  width: 240px;
+}
+
+.projects{
+  padding: 50px 0px;
+  margin-bottom: 80px;
+
+.main-footer{
+
+}
+
+.footer-container{
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+
 .promo-product-title {
     font-family: "Roboto", serif;
     font-size: 36px;

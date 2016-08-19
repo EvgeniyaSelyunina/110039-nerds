@@ -36,70 +36,70 @@
       </div>
     </header>
     <main class="container">
-      <aside class="filters">
+      <aside class="search-filters">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="filters-title">Стоимость:</div>
+          <div class="search-filters-title">Стоимость:</div>
           <input type=range id=weight min=0 value=10 max=15000>
           <label for=weight></label>
-          <p class="filters-title">От
+          <p class="search-filters-title">От
             <input type="text" name="price-min" size="10">
           </p>
-          <p class="filters-title">До
+          <p class="search-filters-title">До
             <input type="text" name="price-max" size="10">
           </p>
-          <div class="filters-title">Сетка:</div>
-            <div class="input-line1">
+          <div class="search-filters-title">Сетка:</div>
+            <div class="input-line">
               <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
             </div>
-            <div class="input-line1">
+            <div class="input-line">
               <input id="fixed" type="radio" name="grid" value="fixed">
               <label for="fixed">Фиксированная</label>
             </div>
-            <div class="input-line1">
+            <div class="input-line">
               <input id="rubber" type="radio" name="grid" value="rubber">
               <label for="rubber">Резиновая</label>
             </div>
-          <div class="filters-title">Особенности:</div>
-            <div class="input-line2">
+          <div class="search-filters-title">Особенности:</div>
+            <div class="input-line">
               <input id="slider" type="checkbox" name="slider" value="slider" checked>
               <label for="slider">Слайдер</label>
             </div>
-            <div class="input-line2">
+            <div class="input-line">
               <input id="advantages" type="checkbox" name="plus" value="plus">
               <label for="advantages">Блок преимуществ</label>
             </div>
-            <div class="input-line2">
+            <div class="input-line">
               <input id="news" type="checkbox" name="news" value="news">
               <label for="news">Новости</label>
             </div>
-            <div class="input-line2">
+            <div class="input-line">
               <input id="gallery" type="checkbox" name="gallery" value="gallery" checked>
               <label for="gallery">Галерея</label>
             </div>
-            <div class="input-line2">
+            <div class="input-line">
               <input id="basket" type="checkbox" name="basket" value="basket">
               <label for="basket">Корзина</label>
             </div>
           <button class="btn" type="submit">Показать</button>
         </form>
       </aside>
-      <div class="sorting">
-        <div class="float-left">
+      <div class="search-results">
+        <div class="search-results-type">
           <ul>
-            <li class="sorting-title">Сортировать:</li>
-            <li class="price">
+            <li>Сортировать:</li>
+            <li class="search-results-item">
               <a href="#">По цене</a>
             </li>
-            <li class="type">
+            <li class="search-results-item">
               <a href="#">По типу</a>
             </li>
-            <li class="functional">
+            <li class="search-results-item">
               <a href="#">По функционалу</a>
             </li>
           </ul>
         </div>
-        <div class="float-right">
+        <div class="search-results-order">
           <a href="#"></a>
           <a class="active"></a>
         </div>
@@ -114,7 +114,11 @@
             </ul>
           </div>
           <img src="img/aviator.png" alt="aviator" width="240" height="240">
-          <div class="item-1" >Description</div>
+          <div class="item-info">
+            <h2 class="item-info-title">AVIATOR</h2>
+            <p>Одностраничный макет с авторским дизайном</p>
+            <a href="#">8000 Р.</a>
+          </div>
         </div>
         <div class="item">
           <img src="img/sunset.png" alt="sunset" width="240" height="240">
@@ -126,19 +130,35 @@
         </div>
         <div class="item">
           <img src="img/forte.png" alt="forte" width="240" height="240">
-          <div class="item-info">Description</div>
+          <div class="item-info">
+            <h2 class="item-info-title">FORTE</h2>
+            <p>Отличный макет для личного блога</p>
+            <a href="#">5000 Р.</a>
+          </div>
         </div>
         <div class="item">
           <img src="img/modern.png" alt="modern" width="240" height="240">
-          <div class="item-info">Description</div>
+          <div class="item-info">
+            <h2 class="item-info-title">MODERN ORGANIC THAI</h2>
+            <p>Сайт для ресторана быстрого питания</p>
+            <a href="#">12000 Р.</a>
+          </div>
         </div>
         <div class="item">
           <img src="img/avenue.png" alt="avenue" width="240" height="240">
-          <div class="item-info">Description</div>
+          <div class="item-info">
+            <h2 class="item-info-title">AVENUE</h2>
+            <p>Макет для блога о путешествиях</p>
+            <a href="#">8000 Р.</a>
+          </div>
         </div>
         <div class="item">
           <img src="img/dovetail.png" alt="dovetail" width="240" height="240">
-          <div class="item-info">Description</div>
+          <div class="item-info">
+            <h2 class="item-info-title">DOVETAIL</h2>
+            <p>Интернет-магазин с галереей товаров</p>
+            <a href="#">14000 Р.</a>
+          </div>
         </div>
       </div>
       <ul class="pagination">
@@ -191,7 +211,7 @@
         <input id="user-email" type="text" name="email" placeholder="для отправки ответа">
         <label for="letter">Текст письма:</label>
         <input id="letter" type="text" name="email" placeholder="в свободной форме">
-        <input type="submit" value="Отправить">
+        <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
   </body>

@@ -7,48 +7,50 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="header-top">
-        <div class="logo"><a href="#"><img src="img/logo.png" alt="Nerds" width="140" height="66"></a>
+      <div class="container clearfix">
+        <div class="header-top">
+          <div class="logo"><a href="#"><img src="img/logo.png" alt="Nerds" width="140" height="66"></a>
+          </div>
+          <nav class="main-navigation">
+            <ul>
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-block">
+            <a class="basket" href="#">Корзина</a>
+          </div>
         </div>
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Студия</a>
-            </li>
-            <li>
-              <a href="#">Клиенты</a>
-            </li>
-            <li>
-              <a href="#">Магазин</a>
-            </li>
-            <li>
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-block">
-          <a class="basket" href="#">Корзина</a>
+        <div class="slider">
+          <div class="slider-left">
+            <h2 class="slider1-title">Долго, дорого, скрупулезно</h2>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+            <a class="btn" href="#">Узнать больше</a>
+          </div>
+          <input type="radio" name="slider1" id="slider1-1" checked="checked">
+          <label for="slider1-1"></label>
+          <input type="radio" name="slider2" id="slider1-2">
+          <label for="slider1-2"></label>
+          <input type="radio" name="slider3" id="slider1-3">
+          <label for="slider1-3"></label>
+          <div class="slider-right">
+            <img class="slider-img" src="img/slider1.png" alt="" width="340" height="238">
+          </div>
         </div>
-      </div>
-      <div class="slider">
-      <div class="slider1">
-        <h2 class="slider1-title">Долго, дорого, скрупулезно</h2>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <a class="btn" href="#">Узнать больше</a>
-      </div>
-      <input type="radio" name="slider1" id="slider1_1" checked="checked">
-      <label for="slider1_1"></label>
-      <input type="radio" name="slider1" id="slider1_2">
-      <label for="slider1_2"></label>
-      <input type="radio" name="slider1" id="slider1_3">
-      <label for="slider1_3"></label>
-      <div class="sliderA-right">
-        <img class="slider-img-1" src="img/slider1.png" alt="" width="340" height="238">
-      </div>
       </div>
     </header>
     <main class="container">
-      <div class="index-content">
+      <div class="index-content clearfix">
         <div class="features">
           <img src="img/features1.png" alt="" width="240" height="124">
           <h2 class="features-title">Веб-сайты</h2>
@@ -68,7 +70,7 @@
           <a class="btn" href="#">Заказать</a>
         </div>
       </div>
-      <section class="promo">
+      <section class="promo clearfix">
         <div class="promo-product">
           <h1 class="promo-product-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.
@@ -82,7 +84,7 @@
         </div>
         <div class="promo-job">
           <div class="logo">
-            <a href="#"><img src="img/logo2.png" alt="Nerds" width="191" height="82"></a>
+            <a href="#"><img src="img/logo.png" alt="Nerds" width="191" height="82"></a>
           </div>
           <div class="promo-product-subtitle">Как мы работаем:</div>
           <ul>
@@ -98,10 +100,10 @@
         <img src="img/logo_borodinski.png" alt="Borodinski" width="230" height="100">
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer clearfix">
       <div class="contacts">
         <img src="img/map.png" alt="Nerds" width="1200" height="420">
-        <form action="" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <h3 class="contacts-name">NERDS DESIGN STUDIO</h3>
             191186, Санкт-Петербург,<br>
             ул. Б.Конюшенная,д. 19/8<br>

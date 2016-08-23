@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -33,7 +35,7 @@
         </div>
         <div class="slider clearfix">
           <div class="slider-left">
-            <h2 class="slider1-title">Долго, дорого, скрупулезно</h2>
+            <h2 class="slider-title">Долго, дорого, скрупулезно</h2>
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
@@ -95,9 +97,9 @@
         </div>
       </section>
       <div class="projects">
-        <img src="img/logo_glukhanko.png" alt="Glukhanko" width="198" height="37">
-        <img src="img/logo_html_academy.png" alt="HTML Academy" width="199" height="68">
-        <img src="img/logo_borodinski.png" alt="Borodinski" width="209" height="86">
+        <a><img src="img/logo_glukhanko.png" alt="Glukhanko" width="198" height="37"></a>
+        <a><img src="img/logo_html_academy.png" alt="HTML Academy" width="199" height="68"></a>
+        <a><img src="img/logo_borodinski.png" alt="Borodinski" width="209" height="86"></a>
       </div>
     </main>
     <footer class="main-footer">
@@ -126,13 +128,19 @@
     </footer>
     <div class="feedback">
       <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="username" placeholder="представьтесь,пожалуйста">
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="text" name="email" placeholder="для отправки ответа">
-        <label for="letter">Текст письма:</label>
-        <input id="letter" type="text" name="email" placeholder="в свободной форме">
-        <input type="submit" value="Отправить">
+        <div class="input-line">
+          <label for="name">Ваше имя:</label>
+          <input id="name" type="text" name="username" placeholder="представьтесь,пожалуйста">
+        </div>
+        <div class="input-line">
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="text" name="email" placeholder="для отправки ответа">
+        </div>
+        <div class="input-line">
+          <label for="letter">Текст письма:</label>
+          <input id="letter" type="text" name="email" placeholder="в свободной форме">
+        </div>
+          <input type="submit" value="Отправить">
       </form>
     </div>
   </body>

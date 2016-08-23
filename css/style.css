@@ -11,6 +11,48 @@ body {
 
 }
 
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -10px -10px;
+}
+
+.sprite--icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -45px;
+}
+
+.sprite--icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -88px;
+}
+
+.sprite--icon-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -131px;
+}
+
+.sprite--icon-instagramm {
+    width: 21px;
+    height: 21px;
+    background-position: -10px -173px;
+}
+
+.sprite--icon-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -10px -214px;
+}
+
 * {
  outline: 1px solid red;
 }
@@ -106,11 +148,11 @@ body {
 }
 
 .slider1-title {
-    font-family: "Roboto", serif;
-    font-size: 18px;
-    color:#000000
-    line-height:30px;
-    font-weight:normal;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  color:#000000
+  line-height:30px;
+  font-weight:normal;
 }
 
 .index-content{
@@ -128,11 +170,11 @@ body {
 }
 
 .features-title {
-    font-family: "Roboto", serif;
-    font-size: 18px;
-    color:#000000
-    line-height:30px;
-    font-weight:normal;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  color:#000000
+  line-height:30px;
+  font-weight:normal;
 }
 
 .promo{
@@ -145,11 +187,11 @@ body {
 }
 
 .promo-product-title {
-    font-family: "Roboto", serif;
-    font-size: 36px;
-    color:#000000
-    line-height:36px;
-    font-weight:normal;
+  font-family: "Roboto", serif;
+  font-size: 36px;
+  color:#000000
+  line-height:36px;
+  font-weight:normal;
 }
 
 .promo-product ul{
@@ -182,9 +224,7 @@ body {
 
 .contacts{
   width: auto;
-  margin-right:10px;
   padding:70px 0px;
-  background-color:#a8cdff;
 }
 
 .contacts-name {
@@ -257,6 +297,27 @@ h1{
   margin-left: 80px;
 }
 
+.pagination a{
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding:10px 20px;
+}
+
+.pagination a:hover{
+  background-color: #e5e5e5;
+}
+
 .pagination ul{
+  margin: 0;
+  padding: 0;
   list-style: none;
+  font-size: 0;
+}
+
+.pagination li{
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+  vertical-align: top;
 }

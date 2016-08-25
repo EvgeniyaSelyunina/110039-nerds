@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -33,20 +33,37 @@
             <a class="basket" href="#">Корзина</a>
           </div>
         </div>
-        <div class="slider clearfix">
-          <div class="slider-left">
-            <h2 class="slider-title">Долго, дорого, скрупулезно</h2>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-            <a class="btn" href="#">Узнать больше</a>
+        <div class="slider">
+          <input type="radio" name="toggle" id="slider-1" checked>
+          <input type="radio" name="toggle" id="slider-2">
+          <input type="radio" name="toggle" id="slider-3">
+          <div class="slider-controls">
+            <label for="slider-1"></label>
+            <label for="slider-2"></label>
+            <label for="slider-3"></label>
           </div>
-          <input type="radio" name="slider1" id="slider1-1" checked="checked">
-          <label for="slider1-1"></label>
-          <input type="radio" name="slider2" id="slider1-2">
-          <label for="slider1-2"></label>
-          <input type="radio" name="slider3" id="slider1-3">
-          <label for="slider1-3"></label>
-          <div class="slider-right">
-            <img class="slider-img" src="img/slider1.png" alt="" width="340" height="238">
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Долго, дорого,<br> скрупулезно.</div>
+                <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+                <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-text">
+                <div class="slide-title">Только наркотики,<br> только хардкор!</div>
+                <p>Все дизайнерские решения в нашей компании принимаются<br> только под воздействием качественных галлюциногенов.</p>
+                <a class="btn" href="#">Узнать больше</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -55,26 +72,26 @@
       <div class="index-content clearfix">
         <div class="features">
           <img src="img/features1.png" alt="" width="240" height="124">
-          <h2 class="features-title">Веб-сайты</h2>
-          <p class="features-text">Мир никогда не будет прежним после того как увидит ваш сайт</p>
+          <div class="features-title">Веб-сайты</div>
+          <p class="features-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="features">
           <img src="img/features2.png" alt="" width="240" height="124">
-          <h2 class="features-title">Приложения</h2>
+          <div class="features-title">Приложения</div>
           <p class="features-text">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="features">
           <img src="img/features3.png" alt="" width="240" height="124">
-          <h2 class="features-title">Презентации</h2>
+          <div class="features-title">Презентации</div>
           <p class="features-text">Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
       </div>
       <section class="promo clearfix">
         <div class="promo-product">
-          <h2 class="promo-product-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h1>
+          <h2 class="promo-product-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.
         Работаем не покладая рук как роботы.</p>
           <div class="promo-product-subtitle">Выполняем заказы на разработку:</div>
@@ -120,7 +137,7 @@
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </div>
           <div class="footer-offer">
-            <h2>Давайте дружить, это выгодно!</h1>
+            <h2>Давайте дружить, это выгодно!</h2>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>

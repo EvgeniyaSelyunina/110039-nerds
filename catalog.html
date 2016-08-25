@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -31,25 +31,30 @@
             </ul>
           </nav>
           <div class="user-block">
-            <a class="cart" href="#">Корзина</a>
+            <a class="basket" href="#">Корзина</a>
           </div>
         </div>
-        <h1 class="main-title">Добро пожаловать в магазин готовых макетов</h1>
+        <h1 class="main-title">Добро пожаловать в магазин<br> готовых макетов</h1>
       </div>
     </header>
     <main class="container clearfix">
-      <aside class="search-filters">
+      <aside class="filters">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="search-filters-title">Стоимость:</div>
-          <input type=range id=weight min=0 value=10 max=15000>
-          <label for=weight></label>
-          <p class="search-filters-title">От
-            <input type="text" name="price-min" size="10">
-          </p>
-          <p class="search-filters-title">До
-            <input type="text" name="price-max" size="10">
-          </p>
-          <div class="search-filters-title">Сетка:</div>
+          <div class="range-filter">
+            <div class="filters-title">Стоимость:</div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" style="margin-left: 20%; width: 30%"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </div>
+          <div class="filters-title">Сетка:</div>
             <div class="input-line">
               <input id="adaptive" type="radio" name="grid" value="adaptive" checked>
               <label for="adaptive">Адаптивная</label>
@@ -62,7 +67,7 @@
               <input id="rubber" type="radio" name="grid" value="rubber">
               <label for="rubber">Резиновая</label>
             </div>
-          <div class="search-filters-title">Особенности:</div>
+          <div class="filters-title">Особенности:</div>
             <div class="input-line">
               <input id="slider" type="checkbox" name="slider" value="slider" checked>
               <label for="slider">Слайдер</label>
@@ -86,7 +91,7 @@
           <button class="btn" type="submit">Показать</button>
         </form>
       </aside>
-      <div class="search-results">
+      <div class="results">
         <div class="sort">
           <div class="sort-type">
             <ul>

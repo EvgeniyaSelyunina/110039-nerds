@@ -11,7 +11,7 @@ body {
 }
 
 .sprite {
-    background-image: url("../img/sprite.png");
+    background-image: url(../img/sprite.png);
     background-repeat: no-repeat;
     display: block;
 }
@@ -28,22 +28,34 @@ body {
     background-position: -10px -45px;
 }
 
+.sprite--icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -10px -80px;
+}
+
+.sprite--icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -10px -123px;
+}
+
 .sprite--icon-facebook {
     width: 12px;
     height: 22px;
-    background-position: -10px -80px;
+    background-position: -10px -166px;
 }
 
 .sprite--icon-instagramm {
     width: 21px;
     height: 21px;
-    background-position: -10px -122px;
+    background-position: -10px -208px;
 }
 
 .sprite--icon-vk {
     width: 26px;
     height: 15px;
-    background-position: -10px -163px;
+    background-position: -10px -249px;
 }
 
 .clearfix::after {
@@ -75,14 +87,14 @@ body {
 
 .logo{
   float: left;
-  width: 140px;
-  margin-right: 180px;
+  width: 139px;
   margin-top: 27px;
 }
 
 .main-navigation{
   float: left;
   width: 430px;
+  margin-left: 180px;
 }
 
 .main-navigation a:hover {
@@ -346,7 +358,7 @@ body {
   position: relative;
   top: 80px;
   display: block;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 3px solid #eeeeee;
 }
 
 .promo{
@@ -374,54 +386,65 @@ body {
   text-transform: uppercase;
 }
 
-.promo-product ul{
+.promo-product ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0;
 }
 
-.promo-product li{
+.promo-product li {
   position: relative;
   z-index: 2;
   display: inline-block;
-  margin:0px;
-  padding: 10px 0;
+  margin: 0px;
+  padding: 10px 0px;
+  padding-left: 36px;
   font-size: 16px;
   line-height: 22px;
   text-align: center;
-  background:#ffffff;
+  background: #ffffff;
+  list-style-type: none;
 }
 
 .promo-product li::after {
   content: "";
   position: relative;
+  width: 25px;
   top: -12px;
+  left: -36px;
   z-index: 1;
   display: block;
-  border-bottom: 2px solid #fb565a;
+  border-bottom: 3px solid #fb565a;
 }
 
 .promo-job{
   float: right;
   width: 240px;
 }
+
 .promo-job .logo{
-  text-align: center;
+  width: 187px;
+  margin-left: 31px;
+  margin-top: 20px;
 }
 
 .logo-part {
   text-align: center;
-  margin-bottom: 65px;
+  margin-bottom: 48px;
 }
 
 .logo-part p{
   position: relative;
   z-index: 2;
   display: inline-block;
-  margin:0px;
+  margin: 0px;
+  margin-top: 40px;
   padding: 0px 10px;
   font-size: 16px;
   line-height: 8.56px;
   text-align: center;
-  background:#ffffff;
+  background: #ffffff;
 }
 
 .logo-part::after{
@@ -430,18 +453,47 @@ body {
   top: -12px;
   z-index: 1;
   display: block;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 3px solid #eeeeee;
 }
 
 .promo-job ul{
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-size: 0;
 }
+
+.promo-job li {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0px;
+  padding: 10px 0px;
+  padding-left: 36px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  background: #ffffff;
+  list-style-type: none;
+}
+
+.promo-job li::after {
+  content: "";
+  position: relative;
+  width: 25px;
+  top: -12px;
+  left: -36px;
+  z-index: 1;
+  display: block;
+  border-bottom: 3px solid #fb565a;
+}
+
 
 .projects{
   font-size: 0px;
   text-align: center;
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
+  border-top: 3px solid #eeeeee;
+  border-bottom: 3px solid #eeeeee;
 }
 
 .projects img{
@@ -542,19 +594,19 @@ body {
 .social-btn-vk::before {
   width: 26px;
   height: 15px;
-  background-position: -11px -162px;
+  background-position: -11px -249px;
 }
 
 .social-btn-fb::before {
   width: 12px;
   height: 22px;
-  background-position: -10px -80px;
+  background-position: -10px -166px;
 }
 
 .social-btn-inst::before {
   width: 21px;
   height: 21px;
-  background-position: -10px -122px;
+  background-position: -10px -208px;
 }
 
 .footer-offer{
@@ -620,17 +672,22 @@ body {
   margin-left: 82px;
 }
 
-.feedback-form input[type="text"] {
-  width: 218px;
-  margin: 10px 20px 20px 0px;
+.input-line input[type="text"] {
+  float: left;
+  width: 220px;
+  margin: 10px 0px;
   padding: 10px 15px;
-
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto","Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
+
+.input-line label{
+  float: left;
+  width: 60px;
+}
+
 
 .main-title{
   display: block;
@@ -752,8 +809,8 @@ input[type="radio"] + label{
 input[type="radio"] + label::before {
   content: "";
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   border-radius: 15px;
   border: 3px solid #c1c1c1;
   background-color: #ffffff;
@@ -768,8 +825,8 @@ input[type="radio"]:checked + label::after {
   height: 8px;
   background-color: #c1c1c1;
   position: absolute;
-  top:6px;
-  left:6px;
+  top:7px;
+  left:7px;
   border-radius: 8px;
 }
 
@@ -781,23 +838,31 @@ input[type="checkbox"] + label{
   display: block;
   margin: 16px 0;
   line-height: 20px;
-  padding-left: 32px;
+  padding-left: 35px;
   position: relative;
   cursor: pointer;
 }
 
 input[type="checkbox"] + label::before {
-  content: url(../img/.icon-check-off.png);
+  content: "";
   position: absolute;
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   background-color: #ffffff;
-  position: absolute;
   top:0;
   left:0;
+  width: 23px;
+  height: 23px;
+  background-position: -10px -80px;
 }
 
 input[type="checkbox"]:checked + label::before {
-  content: url(../img/.icon-check-on.png);
+  content: "";
+  background-image: url("../img/sprite.png");
+  width: 28px;
+  height: 23px;
+  background-position: -10px -123px;
+  background-repeat: no-repeat;
 }
 
 .filters .btn{
@@ -970,7 +1035,7 @@ input[type="checkbox"]:checked + label::before {
   display: block;
   color: #000000;
   text-decoration: none;
-  padding:14px 20px;
+  padding:12px 19px;
   background-color: #f1f1f1;
   border-radius: 3px;
 }
@@ -983,4 +1048,5 @@ input[type="checkbox"]:checked + label::before {
   background-color: white;
   border: 2px solid #f1f1f1;
   border-radius: 3px;
+  padding: 10px 17px;
 }

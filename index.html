@@ -22,7 +22,7 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="#">Магазин</a>
+                <a href="../nerds/catalog.html">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -149,21 +149,22 @@
       </div>
     </footer>
     <div class="feedback">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="input-line">
-          <label for="name">Ваше имя:</label>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-name">
+          <label for="name">Ваше имя:</label><br>
           <input id="name" type="text" name="username" placeholder="представьтесь,пожалуйста">
         </div>
-        <div class="input-line">
-          <label for="user-email">Ваш e-mail:</label>
+        <div class="feedback-mail">
+          <label for="user-email">Ваш e-mail:</label><br>
           <input id="user-email" type="text" name="email" placeholder="для отправки ответа">
         </div>
-        <div class="input-line">
-          <label for="letter">Текст письма:</label>
+        <div class="feedback-letter">
+          <label for="letter">Текст письма:</label><br>
           <input id="letter" type="text" name="email" placeholder="в свободной форме">
         </div>
           <input type="submit" value="Отправить">
       </form>
+      <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
     </div>
   </body>
 </html>

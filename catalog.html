@@ -12,7 +12,7 @@
       <div class="container">
         <div class="header-top clearfix">
           <div class="logo">
-            <a href="#"><img src="img/logo.png" alt="Nerds" width="140" height="66"></a>
+            <a href="../nerds/index.html"><img src="img/logo.png" alt="Nerds" width="140" height="66"></a>
           </div>
           <nav class="main-navigation">
             <ul>
@@ -77,11 +77,11 @@
               <label for="advantages">Блок преимуществ</label>
             </div>
             <div class="input-line">
-              <input id="news" type="checkbox" name="news" value="news">
+              <input id="news" type="checkbox" name="news" value="news" checked>
               <label for="news">Новости</label>
             </div>
             <div class="input-line">
-              <input id="gallery" type="checkbox" name="gallery" value="gallery" checked>
+              <input id="gallery" type="checkbox" name="gallery" value="gallery">
               <label for="gallery">Галерея</label>
             </div>
             <div class="input-line">
@@ -92,7 +92,7 @@
         </form>
       </aside>
       <div class="results">
-        <div class="sort">
+        <div class="sort clearfix">
           <div class="sort-type">
             <ul>
               <li>Сортировать:</li>
@@ -114,58 +114,81 @@
         </div>
         <div class="items">
           <div class="item">
-            <!--<div class="item-elements">
-              <ul>
-                <li>Точка</li>
-                <li>Точка</li>
-                <li>Точка</li>
-              </ul>
-            </div>-->
+            <div class="item-top">
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+            </div>
             <img src="img/aviator.png" alt="aviator" width="240" height="240">
             <div class="item-info">
               <h2 class="item-info-title">AVIATOR</h2>
               <p>Одностраничный макет с авторским дизайном</p>
-              <a href="#">8000 Р.</a>
+              <a class="btn" href="#">8000 Р.</a>
             </div>
           </div>
           <div class="item">
+            <div class="item-top">
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+            </div>
             <img src="img/sunset.png" alt="sunset" width="240" height="240">
             <div class="item-info">
               <h2 class="item-info-title">SUNSET</h2>
               <p>Интернет-магазин с личным кабинетом</p>
-              <a href="#">1000 Р.</a>
+              <a class="btn" href="#">1000 Р.</a>
             </div>
           </div>
           <div class="item">
+            <div class="item-top">
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+            </div>
             <img src="img/forte.png" alt="forte" width="240" height="240">
             <div class="item-info">
               <h2 class="item-info-title">FORTE</h2>
               <p>Отличный макет для личного блога</p>
-              <a href="#">5000 Р.</a>
+              <a class="btn" href="#">5000 Р.</a>
             </div>
           </div>
           <div class="item">
+            <div class="item-top">
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+            </div>
             <img src="img/modern.png" alt="modern" width="240" height="240">
             <div class="item-info">
               <h2 class="item-info-title">MODERN ORGANIC THAI</h2>
               <p>Сайт для ресторана быстрого питания</p>
-              <a href="#">12000 Р.</a>
+              <a class="btn" href="#">12000 Р.</a>
             </div>
           </div>
           <div class="item">
+            <div class="item-top">
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+            </div>
             <img src="img/avenue.png" alt="avenue" width="240" height="240">
             <div class="item-info">
               <h2 class="item-info-title">AVENUE</h2>
               <p>Макет для блога о путешествиях</p>
-              <a href="#">8000 Р.</a>
+              <a class="btn" href="#">8000 Р.</a>
             </div>
           </div>
           <div class="item">
+            <div class="item-top">
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+              <div class="circle">Точка</div>
+            </div>
             <img src="img/dovetail.png" alt="dovetail" width="240" height="240">
             <div class="item-info">
               <h2 class="item-info-title">DOVETAIL</h2>
               <p>Интернет-магазин с галереей товаров</p>
-              <a href="#">14000 Р.</a>
+              <a class="btn" href="#">14000 Р.</a>
             </div>
           </div>
         </div>
@@ -228,6 +251,7 @@
           <input id="letter" type="text" name="email" placeholder="в свободной форме">
         </div>
           <input type="submit" value="Отправить">
+        <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
       </form>
     </div>
   </body>

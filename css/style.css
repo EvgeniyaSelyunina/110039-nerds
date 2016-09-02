@@ -114,7 +114,7 @@ body {
 }
 
 .main-navigation .active{
-  border-bottom: 2px solid #fb565a;
+  border-bottom: 3px solid #fb565a;
   padding-bottom: 0px;
 }
 
@@ -512,7 +512,6 @@ body {
   border-bottom: 3px solid #fb565a;
 }
 
-
 .projects{
   font-size: 0px;
   text-align: center;
@@ -865,6 +864,7 @@ body {
 .input-line{
   font-size: 16px;
   line-height:20px;
+  color: #283136;
 }
 
 input[type="radio"] {
@@ -880,10 +880,6 @@ input[type="radio"] + label{
   cursor: pointer;
 }
 
-input[type="radio"]:hover{
-  color: #111111;
-}
-
 input[type="radio"] + label::before {
   content: "";
   display: block;
@@ -895,10 +891,6 @@ input[type="radio"] + label::before {
   position: absolute;
   top:0;
   left:0;
-}
-
-input[type="radio"] + label::before:hover{
-  background-color: #b5b5b5;
 }
 
 input[type="radio"]:checked + label::after {
@@ -1016,6 +1008,7 @@ input[type="checkbox"]:checked + label::before {
 
 .sort-item a:active{
   color: #000000;
+  border-bottom: 0px;
 }
 
 .sort-order{
@@ -1049,23 +1042,27 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .item{
-  width: 240px;
   display: inline-block;
+  width: 240px;
   vertical-align: top;
   position: relative;
   cursor: pointer;
   margin-bottom: 40px;
 }
 
-.item:nth-child(2n){
-  margin-left: 80px;
-}
-
 .item-info{
   display: none;
 }
 
-.item:hover .item-info{
+.item:hover .item-top{
+  background: #797979;
+}
+
+.item:nth-child(2n){
+  margin-left: 80px;
+}
+
+.item:hover .item-info {
   display:block;
   background-color:white;
   width: 200px;
@@ -1075,7 +1072,7 @@ input[type="checkbox"]:checked + label::before {
   left:20px;
 }
 
-.item-info:hover .item-info-title{
+.item:hover .item-info-title{
   font-size: 18px;
   text-transform: uppercase;
   color:#000000;
@@ -1083,15 +1080,22 @@ input[type="checkbox"]:checked + label::before {
   padding-top: 25px;
 }
 
-.item-info:hover p{
+.item:hover p{
   font-size: 14px;
   line-height:18px;
   padding:0px 20px;
   color:#283136;
   text-align: center;
+  padding-bottom: 10px;
 }
 
-.item-info:hover .btn{
+.item-info .item-info-indent{
+  margin:0px;
+  margin-bottom: 5px;
+}
+
+.item:hover .btn{
+  display: block;
   width: 140px;
   font-size: 18px;
   line-height:8px;
@@ -1105,11 +1109,11 @@ input[type="checkbox"]:checked + label::before {
   border-radius: 3px;
 }
 
-.item-info .btn:hover{
+.item .btn:hover{
   background-color: #d6494d;
 }
 
-.item-info .btn:active{
+.item .btn:active{
   background-color: #b63538;
   box-shadow: 0px 9px 0px -6px #9b2d30 inset;
 }
@@ -1170,4 +1174,9 @@ input[type="checkbox"]:checked + label::before {
   border: 2px solid #f1f1f1;
   border-radius: 3px;
   padding: 10px 17px;
+}
+
+.pagination a:active{
+  background-color: #d5d5d5;
+  box-shadow: 0px 9px 0px -6px #b5b5b5 inset;
 }

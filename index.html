@@ -16,7 +16,7 @@
           <nav class="main-navigation">
             <ul>
               <li>
-                <a href="#">Студия</a>
+                <a class="active">Студия</a>
               </li>
               <li>
                 <a href="#">Клиенты</a>
@@ -148,21 +148,27 @@
         </div>
       </div>
     </footer>
-    <div class="feedback">
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="input-line">
-          <label for="name">Ваше имя:</label>
+    <div class="feedback feedback-open">
+      <form class="feedback-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-line">
+          <div class="label-line">
+            <label for="name">Ваше имя:</label>
+          </div>
           <input id="name" type="text" name="username" placeholder="представьтесь,пожалуйста">
         </div>
-        <div class="input-line">
-          <label for="user-email">Ваш e-mail:</label>
+        <div class="form-line">
+          <div class="label-line">
+            <label for="user-email">Ваш e-mail:</label>
+          </div>
           <input id="user-email" type="text" name="email" placeholder="для отправки ответа">
         </div>
-        <div class="input-line">
-          <label for="letter">Текст письма:</label>
-          <input id="letter" type="text" name="email" placeholder="в свободной форме">
+        <div class="textarea-line">
+          <div class="label-line">
+            <label for="letter">Текст письма:</label>
+          </div>
+          <textarea name="text-letter">в свободной форме</textarea>
         </div>
-          <input type="submit" value="Отправить">
+          <button class="btn" type="submit">Отправить</button>
       </form>
       <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
     </div>

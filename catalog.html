@@ -12,7 +12,7 @@
       <div class="container">
         <div class="header-top clearfix">
           <div class="logo">
-            <a href="../nerds/index.html"><img src="img/logo.png" alt="Nerds" width="140" height="66"></a>
+            <a href="../nerds/index.html"><img src="img/logo.png" alt="Nerds" width="139" height="56"></a>
           </div>
           <nav class="main-navigation">
             <ul>
@@ -23,7 +23,7 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a>Магазин</a>
+                <a class="active">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -39,7 +39,7 @@
     </header>
     <main class="container clearfix">
       <aside class="filters">
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="range-filter">
             <div class="filters-title">Стоимость:</div>
             <div class="range-controls">
@@ -88,7 +88,7 @@
               <input id="basket" type="checkbox" name="basket" value="basket">
               <label for="basket">Корзина</label>
             </div>
-          <button class="btn" type="submit">Показать</button>
+          <button class="btn" type="submit" value="Показать" >Показать</button>
         </form>
       </aside>
       <div class="results">
@@ -127,13 +127,13 @@
             </div>
           </div>
           <div class="item">
-            <div class="item-top">
+            <div class="item-top active">
               <div class="circle">Точка</div>
               <div class="circle">Точка</div>
               <div class="circle">Точка</div>
             </div>
             <img src="img/sunset.png" alt="sunset" width="240" height="240">
-            <div class="item-info">
+            <div class="item-info active">
               <h2 class="item-info-title">SUNSET</h2>
               <p>Интернет-магазин с личным кабинетом</p>
               <a class="btn" href="#">1000 Р.</a>
@@ -236,21 +236,27 @@
         </div>
       </div>
     </footer>
-    <div class="feedback">
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="input-line">
-          <label for="name">Ваше имя:</label><br>
+    <div class="feedback feedback-open">
+      <form class="feedback-form clearfix" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-line">
+          <div class="label-line">
+            <label for="name">Ваше имя:</label>
+          </div>
           <input id="name" type="text" name="username" placeholder="представьтесь,пожалуйста">
         </div>
-        <div class="input-line">
-          <label for="user-email">Ваш e-mail:</label><br>
+        <div class="form-line">
+          <div class="label-line">
+            <label for="user-email">Ваш e-mail:</label>
+          </div>
           <input id="user-email" type="text" name="email" placeholder="для отправки ответа">
         </div>
-        <div class="input-line">
-          <label for="letter">Текст письма:</label><br>
-          <input id="letter" type="text" name="email" placeholder="в свободной форме">
+        <div class="textarea-line">
+          <div class="label-line">
+            <label for="letter">Текст письма:</label>
+          </div>
+          <textarea name="text-letter">в свободной форме</textarea>
         </div>
-          <input type="submit" value="Отправить">
+          <button class="btn" type="submit">Отправить</button>
       </form>
       <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
     </div>

@@ -212,13 +212,14 @@
     </main>
     <footer class="main-footer">
       <div class="contacts">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1200" height="417" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="container">
           <div class="contacts-info">
             <div class="contacts-name">NERDS DESIGN STUDIO</div>
             <p>191186, Санкт-Петербург,<br>
-            ул. Б.Конюшенная,д. 19/8</p>
+            ул. Б. Конюшенная, д. 19/8</p>
             <p>тел. +7 (812) 275-75-75</p>
-            <a class="btn" href="#">Напишите нам</a>
+            <a class="btn-write" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -242,23 +243,38 @@
           <div class="label-line">
             <label for="name">Ваше имя:</label>
           </div>
-          <input id="name" type="text" name="username" placeholder="представьтесь,пожалуйста">
+          <input id="name" type="text" name="username" placeholder="представьтесь,пожалуйста" required>
         </div>
         <div class="form-line">
           <div class="label-line">
             <label for="user-email">Ваш e-mail:</label>
           </div>
-          <input id="user-email" type="text" name="email" placeholder="для отправки ответа">
+          <input id="user-email" type="text" name="email" placeholder="для отправки ответа" required>
         </div>
         <div class="textarea-line">
           <div class="label-line">
             <label for="letter">Текст письма:</label>
           </div>
-          <textarea id="letter" name="text-letter">в свободной форме</textarea>
+          <textarea id="letter" name="text-letter" required>в свободной форме</textarea>
         </div>
           <button class="btn" type="submit">Отправить</button>
       </form>
       <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
     </div>
+    <script>
+      var link = document.querySelector(".btn-write");
+      var popup = document.querySelector(".feedback");
+      var close = popup.querySelector(".feedback-close");
+      var form = popup.querySelector("feedback-form");
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("feedback-open");
+        username.focus();
+      });
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("feedback-open");
+      });
+    </script>
   </body>
 </html>

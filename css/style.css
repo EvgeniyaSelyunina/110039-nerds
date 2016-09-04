@@ -762,6 +762,10 @@ body {
   animation: bounce 0.6s;
 }
 
+.feedback-error {
+  animation: shake 0.6s;
+}
+
 .form-line{
   float: left;
   width: 220px;
@@ -814,11 +818,11 @@ body {
 }
 
 .textarea-line textarea:hover{
-  border: 2px solid #a2a9ac;
+  border: 3px solid #a2a9ac;
 }
 
 .textarea-line textarea:focus{
-  border: 2px solid #57bffb;
+  border: 3px solid #57bffb;
 }
 
 .feedback-form .btn{

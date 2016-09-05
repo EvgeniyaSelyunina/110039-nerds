@@ -225,9 +225,7 @@ body {
   height: 310px;
   background-repeat: no-repeat;
   background-position: 100% 10px;
-  -webkit-transition: left 0.3s ease;
-     -moz-transition: left 0.3s ease;
-          transition: left 0.3s ease;
+  transition: left 0.3s ease;
 }
 
 .slider input[type="radio"] {
@@ -369,7 +367,7 @@ body {
 .features-title {
   font-size: 18px;
   line-height:30px;
-  color:#000000
+  color:#000000;
   font-weight:normal;
   text-transform: uppercase;
   padding-top: 17px;
@@ -433,7 +431,7 @@ body {
 .promo-title {
   font-size: 36px;
   line-height:36px;
-  color:#000000
+  color:#000000;
   font-weight:normal;
   min-width: 540px;
   margin-bottom: 0px;
@@ -604,7 +602,7 @@ body {
 }
 
 .contacts-name{
-  color:#000000
+  color:#000000;
   margin-top:0px;
 }
 
@@ -670,7 +668,9 @@ body {
   position: absolute;
   top:50%;
   left:50%;
-  transform:translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+      -ms-transform:translate(-50%, -50%);
+          transform:translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
 }
@@ -715,30 +715,71 @@ body {
   margin-bottom: -8px;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
   }
   70%  {
-    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
   }
   90%  {
-    transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%   {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px);
+  }
+  70%  {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  90%  {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 @keyframes shake {
   0%, 100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
   20%, 40%, 60%, 80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
@@ -746,7 +787,9 @@ body {
   position: fixed;
   top:15%;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 630px;
   padding: 56px 90px 49px 80px;
   color: #000000;
@@ -759,11 +802,13 @@ body {
 
 .feedback-open {
   display: block;
-  animation: bounce 0.6s;
+  -webkit-animation: bounce 2s;
+          animation: bounce 2s;
 }
 
 .feedback-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .form-line{
@@ -869,11 +914,15 @@ body {
 }
 
 .feedback-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .feedback-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .main-title{
@@ -1155,6 +1204,7 @@ input[type="checkbox"]:checked + label:hover::before {
 .sort-order{
   float: right;
   width: 45px;
+  text-align: right;
 }
 
 .sort-order a{

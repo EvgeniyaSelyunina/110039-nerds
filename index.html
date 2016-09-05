@@ -5,7 +5,7 @@
     <title>Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -22,7 +22,7 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a href="../nerds/catalog.html">Магазин</a>
+                <a href="catalog.html">Магазин</a>
               </li>
               <li>
                 <a href="#">Контакты</a>
@@ -149,7 +149,7 @@
         </div>
       </div>
     </footer>
-    <div class="feedback feedback-open">
+    <div class="feedback">
       <form class="feedback-form clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-line">
           <div class="label-line">
@@ -173,40 +173,6 @@
       </form>
       <button class="feedback-close" type="button" title="Закрыть">Закрыть</button>
     </div>
-    <script>
-      var link = document.querySelector(".btn-write");
-      var popup = document.querySelector(".feedback");
-      var close = popup.querySelector(".feedback-close");
-      var username = popup.querySelector("[name=username]");
-      var email = popup.querySelector("[name=email]");
-      var form = popup.querySelector("form");
-      link.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.add("feedback-open");
-        username.focus();
-      });
-      close.addEventListener("click", function(event) {
-        event.preventDefault();
-        popup.classList.remove("feedback-open");
-        popup.classList.remove("feedback-error");
-      });
-      form.addEventListener("submit", function(event) {
-        if (!username.value || !email.value) {
-          event.preventDefault();
-          popup.classList.remove("feedback-error");
-          popup.offsetWidth = popup.offsetWidth;
-          console.log("Нужно ввести логин и пароль");
-          popup.classList.add("feedback-error");
-        }
-      });
-      window.addEventListener("keydown", function(event) {
-        if (event.keyCode === 27) {
-          if (popup.classList.contains("feedback-open")) {
-            popup.classList.remove("feedback-open");
-            popup.classList.remove("feedback-error");
-          }
-        }
-      });
-    </script>
+    <script src="js/.min.js"></script>
   </body>
 </html>
